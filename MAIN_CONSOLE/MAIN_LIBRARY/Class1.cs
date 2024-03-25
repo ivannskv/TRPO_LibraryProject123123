@@ -423,6 +423,33 @@ namespace MAIN_LIBRARY
             
         }
     }
+    
+    /// <summary>
+    /// Класс Специальность 
+    /// Вариант 6
+    /// Корнилов Максим 
+    /// </summary>
+    public class Specialty
+    {
+        private string name;
+        private string abbreviation;
+    
+        public Specialty(string name, string abbreviation)
+        {
+            this.name = name;
+            this.abbreviation = abbreviation;
+        }
+    
+        public string GetName()
+        {
+            return name;
+        }
+    
+        public string GetAbbreviation()
+        {
+            return abbreviation;
+        }
+    }
 
 }
     
