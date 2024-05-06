@@ -24,7 +24,7 @@ namespace MAIN_LIBRARY
     {
         private string _name;
         private double _salary;
-        private Podrozdelenie _podrozdelenie; //Балванка под пока не существующий класс ПОДРАЗДЕЛЕНИЕ
+        private Podrozdelenie _podrozdelenie; 
 
         public string Name
         {
