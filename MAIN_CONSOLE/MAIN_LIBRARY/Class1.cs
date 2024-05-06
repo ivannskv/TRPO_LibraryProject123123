@@ -2,7 +2,6 @@
 using MAIN_LIBRARY;
 using System.Buffers;
 using System.Text.RegularExpressions;
-
 #region ПРОЧТИ
 ///  ЭТО ВЕЛИКОЛЕПНАЯ БИБЛИОТЕКА КЛАССОВ
 ///  ВСЕ ЧТО ОТ ВАС НАДО - ЭТО СОЗДАТЬ СВОЙ СОБСТВЕННЫЙ !!КЛАСС!!
@@ -11,10 +10,8 @@ using System.Text.RegularExpressions;
 ///  ЕСЛИ БИБЛИОТЕК ВДРУГ СТАЛО БОЛЬШЕ ЧЕМ ЭТО
 ///  ТО ВЫ СНОВА БУБЫЛДА ДУРАЦКАЯ И ВСЕ СЛОМАЛИ
 #endregion
-
 namespace MAIN_LIBRARY
 {
-
     /// <summary>
     /// Класс должность
     /// Вариант 10
@@ -25,13 +22,11 @@ namespace MAIN_LIBRARY
         private string _name;
         private double _salary;
         private Podrozdelenie _podrozdelenie; 
-
         public string Name
         {
             set { _name = value; }
             get { return _name; }
         }
-
         public double Salary
         {
             set
@@ -42,7 +37,6 @@ namespace MAIN_LIBRARY
             }
             get { return _salary; }
         }
-
         public Doljnost(string name, double salary, Podrozdelenie podrozdelenie)
         {
             Name = name;
@@ -77,8 +71,6 @@ namespace MAIN_LIBRARY
             get { return otchestvo; }
             set { otchestvo = value; }
         }
-
-
         private DateTime dateofbirth;
         public DateTime Dateofbirth
         {
@@ -95,7 +87,6 @@ namespace MAIN_LIBRARY
             _group1 = group1;
         }
     }
-
     /// <summary>
     /// Класс Аудитория
     /// Вариант 2
@@ -108,7 +99,6 @@ namespace MAIN_LIBRARY
         private string _Seat = "23";
         private string _Windows = "2";
         //private Oborydovanie _oborydovanie; В группе не делается такой вариант
-
         public string Name
         {
             get { return _Name; }
@@ -133,7 +123,6 @@ namespace MAIN_LIBRARY
             //_oborydovanie = oborydovanie;
         }
     }
-
     /// <summary>
     /// Класс Подразделение
     /// Вариант 11
@@ -190,7 +179,6 @@ namespace MAIN_LIBRARY
             //_rukovoditel = rukovoditel; //нужен класс сотрудник
         }
     }
-
     /// <summary>
     /// Класс Группа
     /// Вариант 4
@@ -384,9 +372,7 @@ namespace MAIN_LIBRARY
         }
         public Para()
         {
-
         }
-
     }
     /// <summary>
     /// Класс Сотрудник 
@@ -400,9 +386,6 @@ namespace MAIN_LIBRARY
         private string _Name;
         private string _Otchestvo;
         private Doljnost doljnost;
-
-
-
         public string Surname
         {
             get { return _Surname; }
@@ -426,16 +409,12 @@ namespace MAIN_LIBRARY
         public Sotrudnic(string surname, string name, string otchestvo, Doljnost doljnost)
         {
             _Surname = name;
-
             _Name = name;
             _Otchestvo = otchestvo;
             _doljnost = doljnost;
-
         }
         public Sotrudnic()
         {
-
         }
     }
-
 }
