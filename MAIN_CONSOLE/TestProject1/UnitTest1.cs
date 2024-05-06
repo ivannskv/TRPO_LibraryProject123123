@@ -7,7 +7,6 @@ namespace UnitTestProject1
     public class UnitTest1
     {
         [TestMethod]
-
         public void Podrozdelenie_ConstructWithValidParameters_ShouldSucceed()
         {
             // Arrange
