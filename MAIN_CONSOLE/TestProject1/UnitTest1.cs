@@ -14,10 +14,8 @@ namespace UnitTestProject1
             string nazvanie = "Отдел разработки";
             string rukovoditel = "Иванов Иван Иванович";
             Organizaciya organizaciya = new Organizaciya("Название", "Юридический адрес", "Фактический адрес");
-
             // Act
             Podrozdelenie podrozdelenie = new Podrozdelenie(nazvanie, rukovoditel, organizaciya);
-
             // Assert
             Assert.IsNotNull(podrozdelenie);
             Assert.AreEqual(nazvanie, podrozdelenie.Nazvanie);
@@ -30,7 +28,6 @@ namespace UnitTestProject1
         {
             // Arrange
             Organizaciya organizaciya = new Organizaciya("Организация", "Юридический адрес", "Фактический адрес");
-
             // Act & Assert
             try
             {
@@ -41,7 +38,6 @@ namespace UnitTestProject1
             {
                 // Ожидаемый результат
             }
-
             try
             {
                 Podrozdelenie podrozdelenie = new Podrozdelenie("Подразделение", null, organizaciya);
@@ -51,7 +47,6 @@ namespace UnitTestProject1
             {
                 // Ожидаемый результат
             }
-
             try
             {
                 Podrozdelenie podrozdelenie = new Podrozdelenie("Подразделение", "Руководитель", null);
@@ -62,6 +57,5 @@ namespace UnitTestProject1
                 // Ожидаемый результат
             }
         }
-
     }
 }
