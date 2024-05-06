@@ -33,7 +33,6 @@ namespace MAIN_LIBRARY
             {
                 if (value >= 0) { _salary = value; }
                 else { throw new ArgumentOutOfRangeException(); }
-
             }
             get { return _salary; }
         }
@@ -213,12 +212,9 @@ namespace MAIN_LIBRARY
             {
                 if (value >= 0) { _godpostuplenija = value; }
                 else { throw new ArgumentOutOfRangeException(); }
-
             }
             get { return _godpostuplenija; }
         }
-
-
         public Group1(string nazvanie, string sokrachenie, string chislennost, int godpostuplenija, Sotrudnic sotrudnic)
         {
             Nazvanie = nazvanie;
@@ -226,8 +222,6 @@ namespace MAIN_LIBRARY
             Chislennost = chislennost;
             Godpostuplenija = godpostuplenija;
             _sotrudnic = sotrudnic;
-
-
         }
     }
     /// <summary>
@@ -277,11 +271,9 @@ namespace MAIN_LIBRARY
         public Smena(string name)
         {
             Name = name;
-
         }
         public Smena()
         {
-
         }
     }
     /// <summary>
@@ -304,7 +296,6 @@ namespace MAIN_LIBRARY
     /// </summary>
     public class Para
     {
-
         private DateTime StartPara;
         private DateTime EndPara;
         private DateTime StartChill;
