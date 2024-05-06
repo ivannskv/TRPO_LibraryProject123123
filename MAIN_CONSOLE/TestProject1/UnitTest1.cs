@@ -1,10 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using MAIN_LIBRARY;
-
-
-
-
 namespace UnitTestProject1
 {
     [TestClass]
@@ -69,5 +65,3 @@ namespace UnitTestProject1
 
     }
 }
-
-
