@@ -2,6 +2,14 @@
 using MAIN_LIBRARY;
 using System.Buffers;
 using System.Text.RegularExpressions;
+#region ПРОЧТИ
+///  ЭТО ВЕЛИКОЛЕПНАЯ БИБЛИОТЕКА КЛАССОВ
+///  ВСЕ ЧТО ОТ ВАС НАДО - ЭТО СОЗДАТЬ СВОЙ СОБСТВЕННЫЙ !!КЛАСС!!
+///  И НАД НИМ ПОДПИСАТЬ В ЧТО ОН, КТО ОН, КЕМ ОН.
+///  ПРИ КОММИТЕ ВЫ УКАЗЫВАЕТЕ ВАРИАНТ
+///  ЕСЛИ БИБЛИОТЕК ВДРУГ СТАЛО БОЛЬШЕ ЧЕМ ЭТО
+///  ТО ВЫ СНОВА БУБЫЛДА ДУРАЦКАЯ И ВСЕ СЛОМАЛИ
+#endregion
 namespace MAIN_LIBRARY
 {
     /// <summary>
@@ -67,6 +75,7 @@ namespace MAIN_LIBRARY
         {
             get { return dateofbirth; }
             set { dateofbirth = value; }
+
         }
         public Student(string surname, string name, string otchestvo, DateTime dateofbith, Group1 group1)
         {
@@ -129,19 +138,16 @@ namespace MAIN_LIBRARY
             get { return _nazvanie; }
             set { _nazvanie = value; }
         }
-
         public string Rukovoditel
         {
             get { return _rukovoditel; }
             set { _rukovoditel = value; }
         }
-
         public Organizaciya Organizaciya
         {
             get { return _organizaciya; }
             set { _organizaciya = value; }
         }
-
         public Podrozdelenie(string nazvanie, string rukovoditel, Organizaciya organizaciya)
         {
             Nazvanie = nazvanie;
@@ -206,6 +212,7 @@ namespace MAIN_LIBRARY
             }
             get { return _godpostuplenija; }
         }
+
         public Group1(string nazvanie, string sokrachenie, string chislennost, int godpostuplenija, Sotrudnic sotrudnic)
         {
             Nazvanie = nazvanie;
