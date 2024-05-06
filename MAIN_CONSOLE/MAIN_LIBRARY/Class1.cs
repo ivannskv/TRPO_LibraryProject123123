@@ -2,14 +2,6 @@
 using MAIN_LIBRARY;
 using System.Buffers;
 using System.Text.RegularExpressions;
-#region ПРОЧТИ
-///  ЭТО ВЕЛИКОЛЕПНАЯ БИБЛИОТЕКА КЛАССОВ
-///  ВСЕ ЧТО ОТ ВАС НАДО - ЭТО СОЗДАТЬ СВОЙ СОБСТВЕННЫЙ !!КЛАСС!!
-///  И НАД НИМ ПОДПИСАТЬ В ЧТО ОН, КТО ОН, КЕМ ОН.
-///  ПРИ КОММИТЕ ВЫ УКАЗЫВАЕТЕ ВАРИАНТ
-///  ЕСЛИ БИБЛИОТЕК ВДРУГ СТАЛО БОЛЬШЕ ЧЕМ ЭТО
-///  ТО ВЫ СНОВА БУБЫЛДА ДУРАЦКАЯ И ВСЕ СЛОМАЛИ
-#endregion
 namespace MAIN_LIBRARY
 {
     /// <summary>
@@ -75,7 +67,6 @@ namespace MAIN_LIBRARY
         {
             get { return dateofbirth; }
             set { dateofbirth = value; }
-
         }
         public Student(string surname, string name, string otchestvo, DateTime dateofbith, Group1 group1)
         {
